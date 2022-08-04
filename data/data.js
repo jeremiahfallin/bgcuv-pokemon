@@ -73,7 +73,7 @@ const games = [
   },
   {
     blue: ["tacitician"],
-    red: ["DizzyIzzy"],
+    red: ["BizzyIzzy"],
     winner: "blue",
     date: "08032022"
   },
