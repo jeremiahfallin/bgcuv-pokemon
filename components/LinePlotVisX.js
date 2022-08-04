@@ -16,18 +16,18 @@ export default function LinePlotVisX({ player, data }) {
 
     const xScale = scaleLinear({
       domain: [
-        min(data, d => min(d.values, d => d.game)),
-        max(data, d => max(d.values, d => d.game)),
+        min(data, (d) => min(d.values, (d) => d.game)),
+        max(data, (d) => max(d.values, (d) => d.game))
       ],
-      range: [0 + padding, width - padding],
+      range: [0 + padding, width - padding]
     });
 
     const yScale = scaleLinear({
       domain: [
-        min(data, d => min(d.values, d => d.rating)),
-        max(data, d => max(d.values, d => d.rating)),
+        min(data, (d) => min(d.values, (d) => d.rating)),
+        max(data, (d) => max(d.values, (d) => d.rating))
       ],
-      range: [height - padding, padding * 2],
+      range: [height - padding, padding * 2]
     });
 
     const colors = {
@@ -36,7 +36,7 @@ export default function LinePlotVisX({ player, data }) {
       gray: "#98A7C0",
       darkGray: "#2A2A2A",
       accent: "#40FEAE",
-      darkAccent: "#256769",
+      darkAccent: "#256769"
     };
     return (
       <svg height={height} width={width}>
@@ -46,7 +46,7 @@ export default function LinePlotVisX({ player, data }) {
           width={width}
           height={height}
           style={{
-            fill: colors.black,
+            fill: colors.black
           }}
           rx={14}
         />
@@ -60,7 +60,7 @@ export default function LinePlotVisX({ player, data }) {
           tickLabelProps={() => ({
             fill: colors.gray,
             textAnchor: "middle",
-            verticalAnchor: "middle",
+            verticalAnchor: "middle"
           })}
         />
         <Axis
@@ -75,7 +75,7 @@ export default function LinePlotVisX({ player, data }) {
           tickLabelProps={() => ({
             fill: colors.gray,
             textAnchor: "end",
-            verticalAnchor: "middle",
+            verticalAnchor: "middle"
           })}
         />
         <LinearGradient
@@ -91,14 +91,14 @@ export default function LinePlotVisX({ player, data }) {
         />
         <LinePath
           data={data
-            .filter(d => {
+            .filter((d) => {
               return d.name === player;
             })[0]
-            .values.map(g => {
+            .values.map((g) => {
               return [g.game, g.rating];
             })}
-          x={d => xScale(d[0])}
-          y={d => yScale(d[1])}
+          x={(d) => xScale(d[0])}
+          y={(d) => yScale(d[1])}
           stroke="url('#line-gradient')"
           strokeWidth={3}
           curve={curveNatural}
@@ -106,14 +106,14 @@ export default function LinePlotVisX({ player, data }) {
         />
         <LinePath
           data={data
-            .filter(d => {
+            .filter((d) => {
               return d.name === player;
             })[0]
-            .values.map(g => {
+            .values.map((g) => {
               return [g.game, g.rating];
             })}
-          x={d => xScale(d[0])}
-          y={d => yScale(d[1])}
+          x={(d) => xScale(d[0])}
+          y={(d) => yScale(d[1])}
           fill="url('#background-gradient')"
           curve={curveNatural}
         />
@@ -121,7 +121,7 @@ export default function LinePlotVisX({ player, data }) {
           style={{
             fill: colors.white,
             fontSize: 24,
-            fontWeight: 600,
+            fontWeight: 600
           }}
           x={padding / 2}
           y={padding}

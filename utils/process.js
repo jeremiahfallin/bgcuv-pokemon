@@ -1,21 +1,12 @@
 import { rate, Rating, quality, winProbability } from "ts-trueskill";
 
 function process(data) {
-    console.log(data);
-let playersArray = [];
+  let playersArray = [];
   let players = {};
   for (let i in data) {
-    const game = data[i].node;
-    let blue = [
-      game.blue1,
-      game.blue2,
-      game.blue3,
-      game.blue4,
-      game.blue5,
-    ].filter(x => !!x);
-    let red = [game.red1, game.red2, game.red3, game.red4, game.red5].filter(
-      x => !!x
-    );
+    const game = data[i];
+    let blue = [game.blue[0]].filter((x) => !!x);
+    let red = [game.red[0]].filter((x) => !!x);
     for (let p of blue) {
       if (!players.hasOwnProperty(p)) {
         players[p] = {};
@@ -25,7 +16,7 @@ let playersArray = [];
         players[p].matchups = {};
         playersArray.push({
           name: p,
-          values: [{ game: 1 * i, rating: players[p].rating.mu }],
+          values: [{ game: 1 * i, rating: players[p].rating.mu }]
         });
       }
       for (let q of red) {
@@ -35,7 +26,7 @@ let playersArray = [];
           players[p].matchups[q].wins = 0;
           players[p].matchups[q].losses = 0;
         }
-        if (data[i].node.winner === "blue") {
+        if (data[i].winner === "blue") {
           players[p].matchups[q].wins++;
         } else {
           players[p].matchups[q].losses++;
@@ -51,7 +42,7 @@ let playersArray = [];
         players[p].matchups = {};
         playersArray.push({
           name: p,
-          values: [{ game: 1 * i, rating: players[p].rating.mu }],
+          values: [{ game: 1 * i, rating: players[p].rating.mu }]
         });
       }
       for (let q of blue) {
@@ -61,7 +52,7 @@ let playersArray = [];
           players[p].matchups[q].wins = 0;
           players[p].matchups[q].losses = 0;
         }
-        if (data[i].node.winner === "red") {
+        if (data[i].winner === "red") {
           players[p].matchups[q].wins++;
         } else {
           players[p].matchups[q].losses++;
@@ -108,16 +99,18 @@ let playersArray = [];
       }
     }
     for (let p of Object.keys(players)) {
-      const playerIndex = playersArray.findIndex(element => element.name === p);
+      const playerIndex = playersArray.findIndex(
+        (element) => element.name === p
+      );
       playersArray[playerIndex].values.push({
         game: i * 1 + 1,
-        rating: players[p].rating.mu,
+        rating: players[p].rating.mu
       });
     }
   }
 
   for (let p of Object.keys(players)) {
-    const playerIndex = playersArray.findIndex(element => element.name === p);
+    const playerIndex = playersArray.findIndex((element) => element.name === p);
     playersArray[playerIndex].rating = players[p].rating;
     playersArray[playerIndex].mu = players[p].rating.mu;
     playersArray[playerIndex].wins = players[p].wins;
