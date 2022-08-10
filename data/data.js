@@ -1,6 +1,6 @@
 const games = [
   {
-    blue: ["Bgcuv1000"],
+    blue: ["BuffaloGhostNinja"],
     red: ["CronosCovid"],
     winner: "red",
     date: "07202022"
@@ -94,6 +94,24 @@ const games = [
     red: ["CronosCovid"],
     winner: "red",
     date: "08032022"
+  },
+  {
+    blue: ["BizzyIzzy"],
+    red: ["Bgcuv7"],
+    winner: "red",
+    date: "08102022"
+  },
+  {
+    blue: ["BuffaloGhostNinja"],
+    red: ["CronosCovid"],
+    winner: "blue",
+    date: "08102022"
+  },
+  {
+    blue: ["Bgcuv7"],
+    red: ["BuffaloGhostNinja"],
+    winner: "blue",
+    date: "08102022"
   }
 ];
 
