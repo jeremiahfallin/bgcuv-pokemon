@@ -112,6 +112,36 @@ const games = [
     red: ["BuffaloGhostNinja"],
     winner: "blue",
     date: "08102022"
+  },
+  {
+    blue: ["BuffaloGhostNinja"],
+    red: ["BizzyIzzy"],
+    winner: "blue",
+    date: "08172022"
+  },
+  {
+    blue: ["Big-hdenll"],
+    red: ["Qcurropoo"],
+    winner: "red",
+    date: "08172022"
+  },
+  {
+    blue: ["BuffaloGhostNinja"],
+    red: ["Qcurropoo"],
+    winner: "red",
+    date: "08172022"
+  },
+  {
+    blue: ["BizzyIzzy"],
+    red: ["tacitician"],
+    winner: "red",
+    date: "08172022"
+  },
+  {
+    blue: ["Qcurropoo"],
+    red: ["tacitician"],
+    winner: "red",
+    date: "08172022"
   }
 ];
 
