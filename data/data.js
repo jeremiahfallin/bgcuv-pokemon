@@ -142,6 +142,66 @@ const games = [
     red: ["tacitician"],
     winner: "red",
     date: "08172022"
+  },
+  {
+    blue: ["Daltyn pizza"],
+    red: ["Rtjjd"],
+    winner: "blue",
+    date: "08312022"
+  },
+  {
+    blue: ["BizzyIzzy"],
+    red: ["Qqcs"],
+    winner: "blue",
+    date: "08312022"
+  },
+  {
+    blue: ["Hailey_82"],
+    red: ["TheBigDude48"],
+    winner: "blue",
+    date: "08312022"
+  },
+  {
+    blue: ["Pippenmeister"],
+    red: ["tacitician"],
+    winner: "red",
+    date: "08312022"
+  },
+  {
+    blue: ["Daltyn pizza"],
+    red: ["BizzyIzzy"],
+    winner: "blue",
+    date: "08312022"
+  },
+  {
+    blue: ["Hailey_82"],
+    red: ["tacitician"],
+    winner: "red",
+    date: "08312022"
+  },
+  {
+    blue: ["Daltyn pizza"],
+    red: ["tacitician"],
+    winner: "red",
+    date: "08312022"
+  },
+  {
+    blue: ["Rtjjd"],
+    red: ["Qqcs"],
+    winner: "blue",
+    date: "08312022"
+  },
+  {
+    blue: ["Rtjjd"],
+    red: ["Hailey_82"],
+    winner: "blue",
+    date: "08312022"
+  },
+  {
+    blue: ["Rtjjd"],
+    red: ["Daltyn pizza"],
+    winner: "red",
+    date: "08312022"
   }
 ];
 
