@@ -42,7 +42,7 @@ const games = [
     date: "07202022"
   },
   {
-    blue: ["Qcurropoo"],
+    blue: ["Qqcs"],
     red: ["TheBigDude48"],
     winner: "red",
     date: "08032022"
@@ -79,7 +79,7 @@ const games = [
   },
   {
     blue: ["Ganggang1974"],
-    red: ["Qcurropoo"],
+    red: ["Qqcs"],
     winner: "red",
     date: "08032022"
   },
@@ -90,7 +90,7 @@ const games = [
     date: "08032022"
   },
   {
-    blue: ["Qcurropoo"],
+    blue: ["Qqcs"],
     red: ["CronosCovid"],
     winner: "red",
     date: "08032022"
@@ -121,13 +121,13 @@ const games = [
   },
   {
     blue: ["Big-hdenll"],
-    red: ["Qcurropoo"],
+    red: ["Qqcs"],
     winner: "red",
     date: "08172022"
   },
   {
     blue: ["BuffaloGhostNinja"],
-    red: ["Qcurropoo"],
+    red: ["Qqcs"],
     winner: "red",
     date: "08172022"
   },
@@ -138,7 +138,7 @@ const games = [
     date: "08172022"
   },
   {
-    blue: ["Qcurropoo"],
+    blue: ["Qqcs"],
     red: ["tacitician"],
     winner: "red",
     date: "08172022"
