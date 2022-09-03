@@ -202,6 +202,12 @@ const games = [
     red: ["Daltyn pizza"],
     winner: "red",
     date: "08312022"
+  },
+  {
+    blue: ["Daltyn pizza"],
+    red: ["tacitician"],
+    winner: "red",
+    date: "09012022"
   }
 ];
 
