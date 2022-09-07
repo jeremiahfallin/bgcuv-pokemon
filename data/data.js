@@ -208,6 +208,36 @@ const games = [
     red: ["tacitician"],
     winner: "red",
     date: "09012022"
+  },
+  {
+    blue: ["Qqcs"],
+    red: ["BuffaloGhostNinja"],
+    winner: "blue",
+    date: "09072022"
+  },
+  {
+    blue: ["Rtjjd"],
+    red: ["Hailey_82"],
+    winner: "blue",
+    date: "09072022"
+  },
+  {
+    blue: ["Qqcs"],
+    red: ["Bgcuv7"],
+    winner: "red",
+    date: "09072022"
+  },
+  {
+    blue: ["Rtjjd"],
+    red: ["CronosCovid"],
+    winner: "red",
+    date: "09072022"
+  },
+  {
+    blue: ["Bgcuv7"],
+    red: ["CronosCovid"],
+    winner: "blue",
+    date: "09072022"
   }
 ];
 
