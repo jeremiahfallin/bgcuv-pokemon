@@ -47,10 +47,10 @@ const calcWinrate = (player) =>
 
 export default function useStorePlayers({ data }) {
   let initialState = {
-    player: data[0]["blue"][0],
+    player: data?.[0]?.["blue"]?.[0],
     rating: false,
     name: true,
-    winrate: true
+    winrate: true,
   };
 
   let [state, dispatch] = useReducer((state, action) => {
