@@ -5,14 +5,14 @@ import { useRouter } from "next/router";
 import pokemon from "../data/pokemon";
 import ssbu from "../data/ssbu";
 
-const slugs = {
+const slugs as any = {
   pokemon,
   ssbu,
 };
 
 const RankingPage: NextPage = () => {
   const router = useRouter();
-  const { slug } = router.query;
+  const { slug } = router.query as string;
 
   if (!slug) return null;
 
